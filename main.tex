@@ -1,0 +1,118 @@
+%TEX-template borrowed from https://github.com/idlouhy/wonsole/blob/master/report/src/report.tex
+
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage[section] {placeins}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+\selectlanguage{english}
+
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{pbox}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{longtable}
+\usepackage{pdfpages}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage{rotating}
+
+\usepackage{nameref}
+\usepackage{fullpage}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{color}
+\usepackage{hyperref}
+
+% Library for syntax highlighting
+\usepackage{minted}
+
+\usepgfplotslibrary{dateplot}
+
+\usemintedstyle[glsl]{colorful}
+\usemintedstyle[c]{colorful}
+\usemintedstyle[cpp]{colorful}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{1.5ex}
+
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{1pt}
+
+\fontfamily{ptm}\selectfont
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,
+    unicode=true,
+    pdftoolbar=true,
+    pdfmenubar=true,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={OpenGL Labs TDT4195},
+    pdfauthor={Bart van Blokland},
+    pdfsubject={Introduction to OpenGL},
+    pdfkeywords={ntnu} {OpenGL} {GLSL} {TDT4195},
+    pdfnewwindow=true,
+    colorlinks=false,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    urlcolor=blue
+}
+
+
+\bibliographystyle{ieeetr}
+
+\begin{document}
+
+%TITLE
+
+\thispagestyle{empty}
+
+\begin{center}
+    {\Huge\textbf{A Hitchhiker's Guide to OpenGL}} \\  
+
+    \vspace{1cm}
+
+    {\large Bart van Blokland}\\
+
+    \vspace{18cm}
+
+	{\large Department of Computer and Information Science, NTNU}\\
+	\vspace{1cm}
+    {\large Revision 4.2}\\ 
+\end{center}
+
+\newpage
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
+
+% CHAPTERS
+
+\input{chapters/02-lab1-overview}
+\input{chapters/02-lab1-basics}
+\input{chapters/02-lab1-shaders}
+
+\newpage
+
+\begin{center}
+	\vspace{9cm}
+	\resizebox{\linewidth}{!}{\textbf{Don't Panic}}
+\end{center}
+
+\end{document}
